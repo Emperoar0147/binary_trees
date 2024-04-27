@@ -13,8 +13,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	/* A tree is perfect if all internal nodes have two children */
 	size_t perfect_nodes = 1;
+
 	for (size_t i = 0; i < height; i++)
-	perfect_nodes *= 2;
+		perfect_nodes *= 2;
 
 	return (perfect_nodes == nodes);
 }
